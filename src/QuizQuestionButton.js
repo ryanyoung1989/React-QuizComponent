@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 class QuizQuestionButton extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     handleClick = (buttonText) => {
         this.props.handleClick(buttonText);
     }
