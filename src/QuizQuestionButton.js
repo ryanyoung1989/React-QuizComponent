@@ -6,10 +6,14 @@ class QuizQuestionButton extends Component {
         super(props);
     }
 
+    handleClick = () => {
+
+    }
+
     render() {
         return (
             <li>
-                <button onClick={ this.props.handleClick }>
+                <button onClick={ this.props.handleClick.bind(this) }>
                     { this.props.button_text }
                 </button> 
             </li>
