@@ -7,9 +7,9 @@ class QuizQuestion extends Component {
         super(props);
     }
 
-    handleClick = (option) => {
-        if (this.props.quiz_question.answer === option) {
-            this.props.showNextQuestionHandler(option);
+    handleClick = (buttonText) => {
+        if (this.props.quiz_question.answer === buttonText) {
+            this.props.showNextQuestionHandler(buttonText);
         } else {
             // show that they clicked the wrong answer
         }
@@ -30,7 +30,7 @@ class QuizQuestion extends Component {
                     this.props.quiz_question.answer_options.map((option, index) => 
                         <QuizQuestionButton button_text={ option } 
                             key={ index } 
-                            handleClick={ this.handleClick.bind(this, option) }/>
+                            handleClick={ this.handleClick.bind(this) }/>
                     )
                 }
               </ul>
