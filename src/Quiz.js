@@ -8,7 +8,7 @@ class Quiz extends Component {
         super(props);
 
         this.state = {
-            quiz_position: 0
+            quiz_position: 1
         };
     }
 
