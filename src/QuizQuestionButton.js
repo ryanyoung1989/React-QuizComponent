@@ -9,7 +9,7 @@ class QuizQuestionButton extends Component {
     render() {
         return (
             <li>
-                <button>
+                <button onClick={ this.props.handleClick }>
                     { this.props.button_text }
                 </button> 
             </li>
